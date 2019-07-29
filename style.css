@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: cursive;
+    
+}
+button {
+    padding: 5px;
+    
+}
+button:hover{
+cursor: pointer;
+}
+header{
+    text-align: center;
+    margin: 0 auto;
+}
+
+form {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid green;
+}
+li {
+    margin: 10px;
+}
+.navigation {
+    display: inline-flex;
+   justify-content: flex-end;
+
+    
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.answers{
+    list-style: none;
+    padding-left: 0 auto;
+   
+}
+.hidden{
+    display: none;
+}
