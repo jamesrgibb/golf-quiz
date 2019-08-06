@@ -1,45 +1,262 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: cursive;
-    
+   font-family: 'Grenze', serif;
+    background-color: #ffffff;
+    background: url('https://www.trimountaingolf.com/static/images/event_promo_box_golfcourseBG.jpg') fixed;
+    background-size: cover;
+    color: #363946;
+}
+/*header styling*/
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+header h1{
+  float: center;
+}
+
+header ul li {
+    padding: 10px 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline;
+}
+header ul {
+    text-align: right;
+    margin-top: 50px
+}
+/*Quiz start screen styling*/
+
+.quizStart {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-top: 0px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: normal;
+    text-shadow: 1px 0 3px black;
 }
 button {
-    padding: 5px;
-    
-}
-button:hover{
-cursor: pointer;
-}
-header{
-    text-align: center;
-    margin: 0 auto;
-}
-
-form {
     padding: 20px;
-    margin-bottom: 20px;
-    border: 2px solid green;
+    border: none;
+    background-color:rgb(25, 139, 25);
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
 }
-li {
-    margin: 10px;
+button:hover, button:focus {
+    background-color: rgba(255, 255, 255, 0.876);
+    color: #4ab962;
+    text-shadow: 1px black;
 }
-.navigation {
-    display: inline-flex;
-   justify-content: flex-end;
-
-    
-}
-.container {
-    max-width: 600px;
+main div {
     margin: 0 auto;
 }
-.answers{
-    list-style: none;
-    padding-left: 0 auto;
-   
+label:nth-child(1) {
+    background-color: rgba(255, 255, 255, 0.876);
+    text-shadow: 1px black;
+    border-radius: 3px;
+    
 }
-.hidden{
+label:nth-child(2) {
+    background-color:  rgba(255, 255, 255, 0.876);
+    text-shadow: 1pxblack;
+    border-radius: 3px;
+}
+label:nth-child(3) {
+    background-color:  rgba(255, 255, 255, 0.876);
+    text-shadow: 1px black;
+    border-radius: 3px;
+}
+label:nth-child(4) {
+    background-color:  rgba(255, 255, 255, 0.876);
+    text-shadow: 1px black;
+    border-radius: 3px;
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #4ab962;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px
+}
+label:hover, label:focus {
+    background-color: rgba(105, 117, 106, 0.157);
+    color: white;
+}
+fieldset {
+    width:75%;
+    border: none;
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 8px solid rgb(25, 139, 25);
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: rgb(25, 139, 25);
+    color: #ffffff;
+    text-shadow: 1px black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+form button:hover, form button:focus {
+    background-color: rgba(255, 255, 255, 0.876);
+    color: rgb(25, 139, 25);
+    
+}
+.answer {
+    flex: 1 1 auto;
+}
+.testForm {
     display: none;
+    width: 50%;
+}
+.correctFeedback {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(245, 255, 255, 1) 0%, rgb(133, 230, 124) 100%);
+    padding-top: 40px;
+    border-radius: 3px;
+}
+.correctFeedback button {
+    width: 100%;
+    border-radius: 3px;
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+h3 {
+    color: rgb(25, 139, 25);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+.restartButton {
+    margin-top: 40px
+}
+@media screen and (max-width: 1190px) {
+    .testForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px;
+        border-radius: 3px;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    header ul {
+        margin: 5px;
+        text-align: center
+    }
+    h1 {
+        font-size: 1.5em
+    } 
+    header ul li {
+        padding: 5px;
+        font-size: 18px;
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0
+    }
+    h2 {
+        font-size: 18px
+    }
+    .testForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0;
+        border-radius: 3px;
+    }
+    label {
+        font-size: 16px;
+        padding: 15px
+    }
+
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px
+    }
+    .results p:first-of-type {
+        font-size: 18px
+    }
+    h3 {
+        font-size: 25px
+    }
 }
