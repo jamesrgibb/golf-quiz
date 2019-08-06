@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Golf Quiz</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="description" content="Test your knowledge of the game of golf">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="index.js"></script>
   </head>
-
   <body>
-      <div class="container">
-    <header><h1>Golf Quiz</h1></header>
-    <form id = "test-form">
-        <h2>Answer the question below.</h2>
-        <p class="question">1. What is the term for a score one over par?</p>
-        <ol class="answers">
-            <li> <button type="submit">A</button> Par + 1</li>
-            <li><button type="submit">B</B></button> Birdie</li>
-            <li><button type="submit">C</button> Eagle</li>
-            <li><button type="submit">D</button> Bogey</li>
-        </ol>
-        <footer>
-        <button type="submit" class="navigation">Previous</button>
-        <button type="submit" class="navigation">Next</button>
-        </footer>
-    </form> 
-</div> 
-    <script src="script.js"></script>
+    <header role="banner">
+        <h1> Golf Quiz</div>
+        <ul>
+          <li>Question: <span class="questionNumber">0</span>/10</li>
+          <li>Score: <span class="score">0</span></li>
+        </ul>
+    </header>
+    <main role="main">
+      <div class="quizStart">
+        <h1>Test your knowledge of Golf!</h1>
+        <button type="button" class="startButton">Begin!</button>
+      </div>
+      <div class="testForm"></div>
+    </main>
   </body>
 </html>
