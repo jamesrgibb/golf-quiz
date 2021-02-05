@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-   font-family: 'Grenze', serif;
     background-color: #ffffff;
     background: url('golf-quiz-bg.jpg') fixed;
     background-size: cover;
+}
+body {
+   font-family: 'Grenze', serif;
     color: #363946;
 }
 /*header styling*/
